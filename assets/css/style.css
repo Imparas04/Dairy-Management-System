@@ -1,0 +1,99 @@
+/* --- Modern Dairy Theme CSS --- */
+
+:root {
+    --primary-blue: #0077b6; /* Deep Sea Blue */
+    --milk-white: #f8fbff;
+    --accent-blue: #caf0f8;
+    --text-dark: #2d3436;
+    --shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Thoda modern font */
+    background: linear-gradient(135deg, #e3f2fd 0%, #ffffff 100%);
+    background-attachment: fixed;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+/* --- Login Box Upgrade --- */
+.login-box {
+    width: 380px;
+    margin: 80px auto;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(10px); /* Glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* --- Input Fields --- */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 12px 0;
+    border: 2px solid #eee;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: var(--primary-blue);
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 119, 182, 0.2);
+}
+
+/* --- Buttons --- */
+button {
+    width: 100%;
+    padding: 14px;
+    background: var(--primary-blue);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #005f91;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.3);
+}
+
+/* --- Dashboard Cards --- */
+.card {
+    display: inline-block;
+    padding: 25px;
+    margin: 15px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    border: none;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    vertical-align: top;
+    min-width: 200px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+/* --- Navbar Upgrade (Agar aapne header.php mein use kiya ho) --- */
+nav {
+    background: white;
+    padding: 15px 50px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
